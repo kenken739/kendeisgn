@@ -11,8 +11,17 @@
     <meta property="og:image" content="/character/standing-a.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>kendesign — 产品设计师 / UI 设计师</title>
-    <script type="module" crossorigin src="/assets/index-7CDPYH9G.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B2HjAzhl.css">
+    <script>
+      // Detect GitHub Pages subdirectory and set base href accordingly
+      (function() {
+        var p = window.location.pathname.replace(/\/+$/, '');
+        if (p.match(/\/kendeisgn$/i)) {
+          document.write('<base href="' + p + '/">');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-7CDPYH9G.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B2HjAzhl.css">
   </head>
   <body>
     <div id="root"></div>
